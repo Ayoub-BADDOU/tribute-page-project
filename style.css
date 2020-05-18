@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #000;
+    width: 100%;
+    height: 627px;
+    border: none;
+}
+
+/*---------------------NavBar---*/
+.navbar{
+    display: flex;
+    padding: 20px ;
+    position: relative;
+    color : #fff; 
+    font-family: "Acme";   
+}
+
+.links{display: inline;}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0; padding: 0;
+    overflow: hidden;
+}
+
+.navbar li{ float: left;}
+
+.navbar li a {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    color:#dc4141; 
+}
+
+.navbar li .active{
+    color:#dc4141; 
+}
+
+.socialmedia{
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+
+.socialmedia img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+
+/*---------------------title---*/
+
+.title h1{
+    color : #fff;
+    text-align: center;
+    font-family: "Acme";   
+    font-size: 48px;
+}
+
+/*---------------------Items---*/
+.items{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.item:hover {background-color: #ffe;}
+
+.row{display: flex; margin-bottom: 20px;}
+
+.item{
+    width: 30%;
+    color: #000;
+    background-color: cornsilk;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+}
+.item{
+    display: flex;
+}
+
+.item .img{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.item .info{
+    margin-left: 15px;
+}
+
+    
+.item .nom{margin-top: 10px;}
+.item .datenaissance{
+    font-size: 9px;
+}
+
+.item .invention{
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.item .histoire{
+    text-decoration: none;
+    color: #dc4141;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/*---------------------Responsive---*/
+
+@media(max-width:800px){
+    .container{height: auto; padding-bottom: 40px;}
+
+    .navbar{display: block;}
+
+    .row{
+        display: block;
+    }
+
+    .item{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+

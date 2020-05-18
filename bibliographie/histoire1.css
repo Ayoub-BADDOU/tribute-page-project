@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    border: none;
+}
+
+/*---------------------NavBar---*/
+.navbar{
+    display: flex;
+    padding: 20px ;
+    position: relative;
+    color : #fff; 
+    font-family: "Acme";   
+}
+
+.links{display: inline;}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0; padding: 0;
+    overflow: hidden;
+}
+
+.navbar li{ float: left;}
+
+.navbar li a {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    color:#dc4141; 
+}
+
+.socialmedia{
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+
+.socialmedia img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+/*---------------------histoire---*/
+
+.item .person{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.item h2{
+    font-size: 48px;
+    color: #dc4141;
+    font-family: "Acme";
+}
+
+.item .datenaissance{
+    font-size: 11px;
+    color: #fff;
+}
+
+
+
+
+
+.item img{
+    display: block;
+    margin: 20px auto;
+}
+
+.item .histoire{
+    text-align: justify;
+    font-family: sans-serif;
+    color: #fff;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------Responsive---*/
+
+@media(max-width:800px){
+    .container{height: auto; padding-bottom: 40px;}
+
+    .navbar{display: block;}
+
+}
